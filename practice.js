@@ -1,7 +1,5 @@
-var properName = prompt("Tell me your name");
-var verb = prompt("Give me a verb in the past tense");
-var noun = prompt("Now give me a noun");
+function howManySeconds(hours) {
+	return (hours * 60) * 60;
+} 
 
-var out = properName + ' ' + verb + ' a ' + noun + '.';
-
-document.getElementById("output").innerHTML = out;
+console.log(howManySeconds(1));
