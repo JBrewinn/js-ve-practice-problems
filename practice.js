@@ -1,5 +1,5 @@
-function leapyear(year) {
-    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
-}
-
-console.log((leapyear(2028)));
+for (var year = 2014; year <= 2050; year++) {
+    var d = new Date(year, 0, 1);
+    if (d.getDay() === 0) 
+    console.log("January 1st is a Sunday in " + year)
+} 
