@@ -1,5 +1,11 @@
-for (var year = 2014; year <= 2050; year++) {
-    var d = new Date(year, 0, 1);
-    if (d.getDay() === 0) 
-    console.log("January 1st is a Sunday in " + year)
-} 
+const num = Math.ceil(Math.random() * 10);
+
+console.log(num);
+
+const gnum = prompt("Guess a number between 1 and 10");
+
+if (gnum == num) {
+    console.log("You guessed right!");
+} else {
+    console.log("Oops, better luck next time! The correct answer was " +num);
+}
