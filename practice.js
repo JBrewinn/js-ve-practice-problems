@@ -1,11 +1,12 @@
-const num = Math.ceil(Math.random() * 10);
+var num = [0];
 
-console.log(num);
-
-const gnum = prompt("Guess a number between 1 and 10");
-
-if (gnum == num) {
-    console.log("You guessed right!");
-} else {
-    console.log("Oops, better luck next time! The correct answer was " +num);
+for (let num = 0; num <= 100; num++) {
+    const gnum = array[num];
+    if (gnum % 15 === 0) {
+        console.log(num = "FizzBuzz");
+    } else if (gnum % 3 === 0) {
+        console.log(num = "Fizz");
+    } else if (gnum % 5 === 0) {
+        console.log(num = "Buzz");
+    }
 }
