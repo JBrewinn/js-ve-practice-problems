@@ -1,12 +1,10 @@
-var num = [0];
-
 for (let num = 0; num <= 100; num++) {
     const gnum = array[num];
     if (gnum % 15 === 0) {
-        console.log(num = "FizzBuzz");
+        console.log("FizzBuzz");
     } else if (gnum % 3 === 0) {
-        console.log(num = "Fizz");
+        console.log("Fizz");
     } else if (gnum % 5 === 0) {
-        console.log(num = "Buzz");
+        console.log("Buzz");
     }
 }
