@@ -21,4 +21,5 @@ function nameString(name) {
     return result;
 }
 
-console.log(nameString("javaScript"));
+// console.log(nameString("javaScript"));
+
