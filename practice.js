@@ -35,4 +35,15 @@ function printArray(number) {
     return newArray;
   }
 
-  console.log(printArray(8));
+//   console.log(printArray(8));
+
+// Mubashir wants to swap two given numbers!
+
+// It is not returning the right values. Can you help him fix it?
+
+function swap(a, b) {
+	[a, b] = [b, a]
+    return [a, b];
+}
+
+console.log(swap(44, 33));
