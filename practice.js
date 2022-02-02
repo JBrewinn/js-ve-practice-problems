@@ -46,4 +46,29 @@ function swap(a, b) {
     return [a, b];
 }
 
-console.log(swap(44, 33));
+// console.log(swap(44, 33));
+
+// Consider a && b:
+
+// a is checked if it is true or false.
+// If a is false, false is returned.
+// b is checked if it is true or false.
+// If b is false, false is returned.
+// Otherwise, true is returned (as both a and b are therefore true ).
+// The && operator will only return true for true && true.
+
+// Make a function using the && operator.
+
+function and(a, b) {
+	return a && b;
+}
+
+// console.log(and(true, true));
+
+// Create a function that returns true when num1 is equal to num2; otherwise return false.
+
+function isSameNum(num1, num2) {
+	return num1 === num2;
+}
+
+console.log(isSameNum(2, 4));
