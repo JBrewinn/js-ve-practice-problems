@@ -125,3 +125,5 @@ function greeting(name) {
 } 
 
 // console.log(greeting("Mubashir"));
+
+
