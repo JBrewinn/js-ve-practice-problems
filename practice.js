@@ -1,53 +1,3 @@
-// Write a function that converts hours into seconds.
-
-function howManySeconds(num) {
-    return num *60 *60;
-}
-
-// console.log(howManySeconds(10));
-
-// Create a function that takes length and width and finds the perimeter of a rectangle.
-
-function findPerimeter(a, b) {
-    return (a * 2) + (b * 2);
-}
-
-// console.log(findPerimeter(20, 10));
-
-// A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Edabit" and store it in a variable called result. He needs your help to fix this code.
-
-function nameString(name) {
-    let result = name + "Edabit";
-    return result;
-}
-
-// console.log(nameString("javaScript"));
-
-// Mubashir created an infinite loop! Help him by fixing the code in the code tab to pass this challenge. Look at the examples below to get an idea of what the function should do.
-
-function printArray(number) {
-    var newArray = [];
-  
-    for(let i = 1; i <= number; i++) {
-      newArray.push(i);
-    }
-  
-    return newArray;
-  }
-
-//   console.log(printArray(8));
-
-// Mubashir wants to swap two given numbers!
-
-// It is not returning the right values. Can you help him fix it?
-
-function swap(a, b) {
-	[a, b] = [b, a]
-    return [a, b];
-}
-
-// console.log(swap(44, 33));
-
 // Consider a && b:
 
 // a is checked if it is true or false.
@@ -65,10 +15,113 @@ function and(a, b) {
 
 // console.log(and(true, true));
 
+
 // Create a function that returns true when num1 is equal to num2; otherwise return false.
 
 function isSameNum(num1, num2) {
 	return num1 === num2;
 }
 
-console.log(isSameNum(2, 4));
+// console.log(isSameNum(2, 4));
+
+
+// Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+// wins get 3 points
+// draws get 1 point
+// losses get 0 points
+
+function footballPoints(wins, draws, losses) {
+	return (wins  * 3) + (draws * 1) + (losses * 0);
+}
+
+// console.log(footballPoints(0, 0, 1));
+
+
+// Write a function that takes two integers (hours, minutes), converts them to seconds, and adds them.
+
+function convert(hours, minutes) {
+	return (hours * 3600) + (minutes * 60);
+}
+
+// console.log(convert(2, 0));
+
+
+// Fix the code in the Code tab so the function returns true if and only if x is equal to 7.
+
+function isSeven(x) {
+	return x =="7";
+}
+
+// console.log(isSeven(7));
+
+
+// In this challenge, you must verify the equality of two different values given the parameters a and b.
+
+// Both the value and type of the parameters need to be equal. The possible types of the given parameters are:
+
+// Numbers
+// Strings
+// Booleans (false or true)
+// Special values: undefined, null and NaN
+// What have you learned so far that will permit you to do two different checks (value and type) with a single statement?
+
+// Implement a function that returns true if the parameters are equal, and false if they are not.
+
+function checkEquality(a, b) {
+    return a === b;
+}
+
+// console.log(checkEquality(1, 1));
+
+
+// Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+
+function profitableGamble(prob, prize, pay) {
+	return (prob * prize) > pay;
+}
+
+// console.log(profitableGamble(.9, 3, 2));
+
+
+// Create a function that takes a boolean variable flag and returns it as a string.
+
+function boolToString(flag) {
+	return flag.toString();
+}
+
+// console.log(boolToString(true));
+
+
+// Create a function that returns the given argument, but by using an arrow function.
+
+let arrowFunc = (input) =>  input;
+
+// console.log(arrowFunc("test"));
+
+
+// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+let frames = (x, y) => (x * 60) * y;
+
+// console.log(frames(10, 25));
+
+
+// Create a function that will handle simple math expressions. The input is an expression in the form of a string.
+
+let calculator = str => eval(str);
+
+// console.log(calculator(24/4));
+
+
+// Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+
+// Can you help her?
+
+function greeting(name) {
+    if(name == "Mubashir") {
+      return "Hello, my Love!";
+    } else return "Hello " + name +"!";
+} 
+
+// console.log(greeting("Mubashir"));
