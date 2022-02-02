@@ -126,6 +126,7 @@ function greeting(name) {
 
 // console.log(greeting("Mubashir"));
 
+
 // Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
 
 function makesTen(a, b) {
@@ -136,4 +137,34 @@ function makesTen(a, b) {
 	} return false;
 }
 
-console.log(makesTen(2, 1));
+// console.log(makesTen(2, 1));
+
+
+// A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
+
+// Create a function which calculates the amount of fuel it needs, given the distance.
+
+function calculateFuel(miles) {
+	if (miles < 10) {
+		return 100;
+	} else return miles * 10;
+}
+
+// console.log(calculateFuel(15));
+// console.log(calculateFuel(23.5));
+// console.log(calculateFuel(3));
+
+
+// Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+
+function maxNum(n1, n2) {
+	if (n1 < n2) {
+	  return n2
+	}
+  	else return n1;
+}
+
+// console.log(maxNum(3, 7));
+// console.log(maxNum(-1, 0));
+// console.log(maxNum(1000, 400));
+
