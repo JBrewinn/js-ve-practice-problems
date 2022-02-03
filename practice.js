@@ -168,3 +168,24 @@ function maxNum(n1, n2) {
 // console.log(maxNum(-1, 0));
 // console.log(maxNum(1000, 400));
 
+
+// Given two arguments, return an array which contains these two arguments.
+
+function makePair(num1, num2) {
+	return [51, num2];
+}
+
+// console.log(makePair(51, 21));
+
+
+// Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+
+function comp(str1, str2) {
+	if (str1.length == str2.length) {
+		return true;
+	} else return false;
+}
+
+console.log(comp("AB", "CD"));
+console.log(comp("ABC", "DE"));
+console.log(comp("hello", "edabit"));
