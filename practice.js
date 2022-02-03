@@ -186,6 +186,19 @@ function comp(str1, str2) {
 	} else return false;
 }
 
-console.log(comp("AB", "CD"));
-console.log(comp("ABC", "DE"));
-console.log(comp("hello", "edabit"));
+// console.log(comp("AB", "CD"));
+// console.log(comp("ABC", "DE"));
+// console.log(comp("hello", "edabit"));
+
+
+// Create a function that returns true if a string is empty and false otherwise.
+
+function isEmpty(s) {
+	if (s.length > 0) {
+		return false;
+	} else return true;
+}
+
+console.log(isEmpty(""));
+console.log(isEmpty(" "));
+console.log(isEmpty("a"));
