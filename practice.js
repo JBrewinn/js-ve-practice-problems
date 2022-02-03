@@ -199,6 +199,19 @@ function isEmpty(s) {
 	} else return true;
 }
 
-console.log(isEmpty(""));
-console.log(isEmpty(" "));
-console.log(isEmpty("a"));
+// console.log(isEmpty(""));
+// console.log(isEmpty(" "));
+// console.log(isEmpty("a"));
+
+
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+function divisibleByFive(n) {
+	if (n%5 == 0) {
+		return true;
+	} else return false;
+}
+
+console.log(divisibleByFive(5));
+console.log(divisibleByFive(-55));
+console.log(divisibleByFive(37));
