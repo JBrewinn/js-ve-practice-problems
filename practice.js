@@ -277,3 +277,38 @@ function eq(evaluate) {
 }
 
 
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+
+function getVoteCount(votes) {
+	return votes.upvotes - votes.downvotes;
+}
+
+// Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
+
+function returnNegative(num) {
+	if (num > 0) {
+		return num * -1;
+	} else return num;
+}
+
+
+// A leap year happens every four years, so it's a year that is perfectly divisible by four. However, if the year is a multiple of 100 (1800, 1900, etc), the year must be divisible by 400.
+
+// Write a function that determines if the year is a leap year or not.
+
+function leapYear(year) {
+	if (year%100 == 0) {
+		return year%400 == 0;
+	} 
+	else return year%4 == 0;
+} 
+
+
+// Write a function to reverse an array.
+
+function reverse(arr) {
+	return arr.reverse();
+}
+
+console.log(reverse([1, 2, 3, 4]));
+console.log(reverse([]));
