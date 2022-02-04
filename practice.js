@@ -268,3 +268,12 @@ function futurePeople(population, n) {
 	n = n * 360;
 	return n + population;
 }
+
+
+// Create a function that evaluates an equation.
+
+function eq(evaluate) {
+	return eval(evaluate);
+}
+
+
