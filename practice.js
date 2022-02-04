@@ -265,13 +265,6 @@ function has_bugs(buggyCode) {
 // Return the number of people there will be when the spaceship is complete.
 
 function futurePeople(population, n) {
-	let i = 1
-	while (i <= 3) {
-		n = n * 360;
-		return n + population;
-	}
+	n = n * 360;
+	return n + population;
 }
-
-console.log(futurePeople(256, 2));
-console.log(futurePeople(3248, 6));
-console.log(futurePeople(5240, 3));
