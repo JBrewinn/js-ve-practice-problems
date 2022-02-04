@@ -205,6 +205,73 @@ function stringInt (a) {
 	return num;
 }
 
-console.log(stringInt("6"));
-console.log(stringInt("1000"));
-console.log(stringInt("12"));
+
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+
+function area(a, b) {
+	if (a <=0 || b <= 0) {
+		return -1;
+	} else {
+		return (a*b);
+	}
+}
+
+
+// Write a function that returns true if the given integer is even, and false if it's odd.
+
+function isEven(n) {
+	if (n%2 == 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+// Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+function concatName (firstName, lastName) {
+	let name = "";
+	name += lastName + ", " + firstName;
+	return name;
+}
+
+
+// The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
+
+// function has_bugs(buggy_code) {
+// 	if (buggyCode) {
+// 		return 'sad days'
+// 	} else if {
+// 		return 'it's a good day'
+// 	}
+// }
+
+function has_bugs(buggyCode) {
+	if (buggyCode == true) {
+		return 'sad days'
+	} else if (buggyCode == false) {
+		return 'it\'s a good day';
+	}
+}
+
+
+// Scientists have discovered that in four decades, the world will EXPLODE! It will also take three decades to make a spaceship to travel to a new planet that can hold the entire world population.
+
+// You must calculate the number of people there will be in three decades from now.
+
+// The variable population is the world population now.
+// Assume that every month, someone gives birth to more people n.
+// Return the number of people there will be when the spaceship is complete.
+
+function futurePeople(population, n) {
+	let i = 1
+	while (i <= 3) {
+		n = n * 360;
+		return n + population;
+	}
+}
+
+console.log(futurePeople(256, 2));
+console.log(futurePeople(3248, 6));
+console.log(futurePeople(5240, 3));
