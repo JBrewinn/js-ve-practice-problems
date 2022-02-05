@@ -318,5 +318,39 @@ function reverse(arr) {
 // The function accepts two parameters, age and isSupervised. Return a boolean.
 
 function acceptIntoMovie(age, isSupervised) {
-	
+	if (age >= 15 || isSupervised == true) {
+		return true;
+	} else return false;
 }
+
+
+// Help fix all the bugs in the function incrementItems! It is intended to add 1 to every element in the array!
+
+// function incrementItems(arr) {
+// 	for (let i = 0; i < array.length; i++)
+// 		arr[i] === arr[i] + 1
+// 	return array
+// }
+
+function incrementItems(arr) {
+	let array = [];
+	for (let i = 0; i < arr.length; i++) {
+		array.push(arr[i] + 1);
+	} 
+	return array;
+}
+
+
+// A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
+
+// Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+
+function shouldServeDrinks(age, onBreak) {
+	if (age >= 18 && onBreak == false) {
+		return true;
+	} else return false;
+}
+
+console.log(shouldServeDrinks(17, true));
+console.log(shouldServeDrinks(19, false));
+console.log(shouldServeDrinks(30, true));
