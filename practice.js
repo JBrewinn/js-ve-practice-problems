@@ -531,5 +531,9 @@ function imposterFormula(i, p) {
 // Create a function that takes the number of daily average recovered cases recovers, daily average newCases, current activeCases, and returns the number of days it will take to reach zero cases.
 
 function endCorona(recovers, newCases, activeCases) {
-	
+	return Math.round(activeCases/(recovers - newCases));
 }
+
+console.log(endCorona(4000, 2000, 77000));
+console.log(endCorona(3000, 2000, 50699));
+console.log(endCorona(30000, 25000, 390205));
