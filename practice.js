@@ -534,6 +534,72 @@ function endCorona(recovers, newCases, activeCases) {
 	return Math.round(activeCases/(recovers - newCases));
 }
 
-console.log(endCorona(4000, 2000, 77000));
-console.log(endCorona(3000, 2000, 50699));
-console.log(endCorona(30000, 25000, 390205));
+
+// Create variables first, second, third and other from the given array using Destructuring Assignment (check the Resources tab for some examples).
+
+[first, second, third, ...other] = [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+// Create a function that takes a word and returns the new word without including the first character.
+
+function newWord(str) {
+	return str.slice(1);
+}
+
+
+// Create a function that returns the opposite of the given boolean, as a number.
+
+function flipBool(b) {
+	return Number(!b);
+}
+
+
+// Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+
+helloName = (name) => "Hello " + name + "!";
+
+
+// Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+
+function isEOrO(num) {
+	if (num%2 == 0) {
+		return "even";
+	} else 
+	return "odd";
+}
+
+
+// Éowyn has written the function isOdd() to check if a given number is odd or not. Unfortunately, the function does not return the correct result for all the inputs. Help her fix the error.
+
+function isOdd(num) {
+	return num % 2 != 0;
+}
+
+
+// For this challenge, you will NOT be given a string. Your task isn't to add "Do not" before the given string. If there is no given string, you will not return "Do not do anything." Do not check the examples to know how to do this challenge.
+
+function reversePsychology(s) {
+	if (s == "") {
+		return "Do not do anything."
+	} else
+	return "Do not " + s;
+}
+
+
+// Create a function that takes a string txt and a number n and returns the repeated string n number of times.
+
+// If given argument txt is not a string, return Not A String !!
+
+function repeatString(str, n) {
+	if (typeof str != typeof "") {
+		return "Not a string !!"
+	} else
+	return str.repeat(n);
+}
+
+
+// Here's an image of four models. Some of the cubes are hidden behind other cubes. Model one consists of one cube. Model two consists of four cubes, and so on...
+
+function stackBoxes(n) {
+	return n ** 2;
+}
