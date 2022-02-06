@@ -484,3 +484,35 @@ function calculateExponent(n, exp) {
 }
 
 
+// Given the radius of a circle and the area of a square, return true if the circumference of the circle is greater than the square's perimeter and false if the square's perimeter is greater than the circumference of the circle.
+
+function circle_or_square(rad, area){
+	return ((rad * 3.14 * 2) > (Math.sqrt(area) * 4));
+}
+
+
+// Create a function that accepts an array and returns the last item in the array.
+
+function getLastItem(arr) {
+	return arr[arr.length - 1];
+}
+
+
+// According to the lodash documentation, _.drop creates a slice of an array with n elements dropped from the beginning.
+
+// Your challenge is to write your own version using vanilla JavaScript.
+
+function drop(arr, val = 1) {
+	return arr.slice(val);
+}
+
+
+// Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator. Use the operator on number 1 and 2.
+
+function operate(num1, num2, operator) {
+	return eval(num1 + operator +  num2);
+}
+
+console.log(operate(1, 2, "+"));
+console.log(operate(7, 10, "-"));
+console.log(operate(20, 10, "%"));
