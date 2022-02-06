@@ -364,4 +364,53 @@ function format(a, b, c) {
 	return template;
 }
 
-console.log(format("John", "Joe", "Jack"));
+
+// In the Code tab you will find code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section below.
+
+// Write five adder functions:
+
+// add2(x) should return 2 + x.
+// add3(x) should return 3 + x.
+// add5(x) should return 5 + x.
+// add7(x) should return 7 + x.
+// add11(x) should return 11 + x.
+
+add2 = x => 2 + x;
+
+add3 = x => 3 + x;
+
+add5 = x => 5 + x;
+
+add7 = x => 7 + x;
+
+add11 = x => 11 + x;
+
+
+// Write a function that uses the ternary operator to return "yeah" if bool is true, and "nope" otherwise.
+
+function yeah_nope(bool) {
+	return bool == true ? "yeah" : "nope";
+}
+
+
+// I have a bucket containing an amount of navy blue paint and I'd like to paint as many walls as possible. Create a function that returns the number of complete walls that I can paint, before I need to head to the shops to buy more.
+
+// n is the number of square meters I can paint.
+// w and h are the widths and heights of a single wall in meters.
+
+function howManyWalls(n, w, h) {
+	return x = Math.floor(n/(w*h));
+}
+
+
+// Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
+
+function equilbrium (x) {
+	if (x > 0) return "positive" 
+	if (x < 0) return "negative"
+	return true
+}
+
+console.log(equilbrium(0));
+console.log(equilbrium(3));
+console.log(equilbrium(-3));
