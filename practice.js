@@ -351,6 +351,17 @@ function shouldServeDrinks(age, onBreak) {
 	} else return false;
 }
 
-console.log(shouldServeDrinks(17, true));
-console.log(shouldServeDrinks(19, false));
-console.log(shouldServeDrinks(30, true));
+
+// Write a template string according to the following example:
+
+// const a = "John";
+// const b = "Joe";
+// const c = "Jack";
+// const template = "your template string" ➞ "Their names were:  John,  Joe  and  Jack."
+
+function format(a, b, c) {
+	const template = `Their names were: ${a}, ${b}, ${c}`;
+	return template;
+}
+
+console.log(format("John", "Joe", "Jack"));
