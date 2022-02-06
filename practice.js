@@ -411,6 +411,76 @@ function equilbrium (x) {
 	return true
 }
 
-console.log(equilbrium(0));
-console.log(equilbrium(3));
-console.log(equilbrium(-3));
+
+// Given a string, return true if its length is even or false if the length is odd.
+
+function oddOrEven(str) {
+	return str.length%2 == 0;
+}
+
+
+// With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
+
+const arr = [1, 2, 3, 4, 5, 6]
+
+let [a, b] = arr;
+
+
+// The police send you an electronic statement for you to sign. As you begin to sign, an error pops up. Apparently, they sent you a protected document.
+
+// This challenge is a bit different as the function you are given already contains some code that you should not change or remove. Also, don't do a return statement, it is already included. Your task is, given an object, prevent changes to that object.
+
+function preventChanges(obj) {
+	// write your code here
+	  // don't use a return statement
+	Object.freeze(obj);
+	  
+	// DON'T CHANGE OR REMOVE THE LINES BELOW
+	obj.noChanges = false;
+	obj.signature = "whatever";
+	return obj;
+  }
+
+
+//   I'd like to calculate how long on average I've lived in a single house.
+
+//   Given a person's age and the number of times they've moved house as moves, return the average number of years that they've spent living in the same house.
+
+function yearsInOneHouse(age, moves) {
+	return Math.round(age/(moves + 1));
+}
+
+
+// Create a function that takes a number n and returns the nth even number beginning with 0 as the first.
+
+function nthEven(n) {
+	return (n * 2) - 2;
+}
+
+
+// Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+
+function inchesToFeet(n) {
+	if (n < 12) return 0;
+	if (n >= 12) return n / 12;
+}
+
+
+// You need to create two functions to substitute toString() and parseInt(); A function called intToString() that converts integers into strings and a function called stringToInt() that converts strings into integers.
+
+function intToString(num) {
+	return num.toString();
+}
+
+function stringToInt(num) {
+	return parseInt(num);
+}
+
+
+// Create a function that takes a base number and an exponent number and returns the calculation.
+
+function calculateExponent(n, exp) {
+	return n ** exp;
+}
+
+
