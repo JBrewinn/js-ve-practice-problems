@@ -513,6 +513,23 @@ function operate(num1, num2, operator) {
 	return eval(num1 + operator +  num2);
 }
 
-console.log(operate(1, 2, "+"));
-console.log(operate(7, 10, "-"));
-console.log(operate(20, 10, "%"));
+
+// Create a function that returns how many possible arrangements can come from a certain number of switches (on / off). In other words, for a given number of switches, how many different patterns of on and off can we have?
+
+function posCom(num) {
+	return 2 ** num; // can also use return Math.pow(2, num);
+}
+
+
+// Create a function that calculates the chance of being an imposter. The formula for the chances of being an imposter is 100 × (i / p) where i is the imposter count and p is the player count. Make sure to round the value to the nearest integer and return the value as a percentage.
+
+function imposterFormula(i, p) {
+	return (Math.round(100 * (i / p))).toString() + "%";
+}
+
+
+// Create a function that takes the number of daily average recovered cases recovers, daily average newCases, current activeCases, and returns the number of days it will take to reach zero cases.
+
+function endCorona(recovers, newCases, activeCases) {
+	
+}
