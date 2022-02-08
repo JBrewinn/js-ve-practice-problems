@@ -603,3 +603,17 @@ function repeatString(str, n) {
 function stackBoxes(n) {
 	return n ** 2;
 }
+
+
+// Create a function that takes an array and returns the types of values (data types) in a new array.
+
+typeArr = []
+
+function arrayValuesTypes(arr) {
+	for (let i = 0; i < arr.length; i++) {
+		typeArr.push(typeof arr[i]);
+	}
+	return typeArr;
+}
+
+console.log(arrayValuesTypes([1, 2, "null", []]));
