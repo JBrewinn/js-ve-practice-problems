@@ -585,6 +585,7 @@ function reversePsychology(s) {
 	return "Do not " + s;
 }
 
+console.log(reversePsychology("do the dishes"));
 
 // Create a function that takes a string txt and a number n and returns the repeated string n number of times.
 
@@ -597,6 +598,8 @@ function repeatString(str, n) {
 	return str.repeat(n);
 }
 
+// console.log(repeatString("Matt", 4));
+
 
 // Here's an image of four models. Some of the cubes are hidden behind other cubes. Model one consists of one cube. Model two consists of four cubes, and so on...
 
@@ -604,6 +607,7 @@ function stackBoxes(n) {
 	return n ** 2;
 }
 
+// console.log(stackBoxes(4));
 
 // Create a function that takes an array and returns the types of values (data types) in a new array.
 
@@ -616,4 +620,4 @@ function arrayValuesTypes(arr) {
 	return typeArr;
 }
 
-console.log(arrayValuesTypes([1, 2, "null", []]));
+// console.log(arrayValuesTypes([1, 2, "null", []]));
