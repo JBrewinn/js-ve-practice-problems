@@ -635,4 +635,5 @@ function addUpTo(num) {
 		i++;
 	} return tot;
 }
-console.log(addUpTo(7));
+// console.log(addUpTo(7));
+
