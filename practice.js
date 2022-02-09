@@ -621,3 +621,13 @@ function arrayValuesTypes(arr) {
 }
 
 // console.log(arrayValuesTypes([1, 2, "null", []]));
+
+
+// Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers up to and including it.
+
+function addUpTo(num) {
+	for (let i = 0; i > 1; i++) {
+		
+	}
+
+}
