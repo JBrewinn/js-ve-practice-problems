@@ -611,6 +611,7 @@ function stackBoxes(n) {
 
 // console.log(stackBoxes(4));
 
+
 // Create a function that takes an array and returns the types of values (data types) in a new array.
 
 typeArr = []
@@ -623,6 +624,7 @@ function arrayValuesTypes(arr) {
 }
 
 // console.log(arrayValuesTypes([1, 2, "null", []]));
+
 
 // Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers up to and including it.
 
@@ -637,3 +639,18 @@ function addUpTo(num) {
 }
 // console.log(addUpTo(7));
 
+
+// Create a function that takes an array of strings and numbers, and filters out the array so that it returns an array of integers only.
+
+var newArr = [];
+
+function filterArray(arr) {
+	for (let i = 0; i < arr.length; i++) {
+		if (typeof arr[i] == Number) {
+			newArr.push(arr[i]);
+			
+		} return newArr;
+	} 
+}
+
+console.log(filterArray([1, 2, 3, "a", "b", 4]));
