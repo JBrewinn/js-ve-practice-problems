@@ -576,6 +576,8 @@ function isOdd(num) {
 }
 
 
+
+
 // For this challenge, you will NOT be given a string. Your task isn't to add "Do not" before the given string. If there is no given string, you will not return "Do not do anything." Do not check the examples to know how to do this challenge.
 
 function reversePsychology(s) {
@@ -585,7 +587,7 @@ function reversePsychology(s) {
 	return "Do not " + s;
 }
 
-console.log(reversePsychology("do the dishes"));
+// console.log(reversePsychology("do the dishes"));
 
 // Create a function that takes a string txt and a number n and returns the repeated string n number of times.
 
@@ -621,3 +623,16 @@ function arrayValuesTypes(arr) {
 }
 
 // console.log(arrayValuesTypes([1, 2, "null", []]));
+
+// Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers up to and including it.
+
+var i = 1;
+var tot = 0;
+
+function addUpTo(num) {
+	while (i <= num) {
+		tot += i;
+		i++;
+	} return tot;
+}
+console.log(addUpTo(7));
