@@ -682,3 +682,48 @@ function addOddToN(num) {
 // console.log(addOddToN(5));
 
 
+// Create a function that takes a number n and returns the first 10 multiples of n with 1 added to it, separated by commas.
+
+var list = "";
+
+function nTablesPlusOne(n) {
+	for (let i = 1; i <= 10; i++) {
+		num = (n*i) + 1;
+		list += num + " ";
+	} return list;
+}
+
+// console.log(nTablesPlusOne(7));
+
+
+// Create a function that takes a number n and returns the sum of all square numbers up to and including n.
+var num = 0;
+
+function squaresSum(n) {
+	for (let i = 1; i <= n; i++) {
+		num += Math.pow(i, 2);
+		console.log(num);
+	} return num;
+}
+
+// console.log(squaresSum(3));
+
+
+// Create a function that returns an array of booleans from a given number by iterating through the number one digit at a time and appending true into the array if the digit is 1 and false otherwise.
+
+var list = [];
+
+function integerBoolean(num) {
+	n = num.split("");
+	for (let i = 0; i < num.length; i++) {
+		if (n[i] == 1) {
+			list.push(true);
+		} else if (n[i] == 0) {
+			list.push(false);
+		} 
+	} return list;
+}
+
+// console.log(integerBoolean("100101"));
+
+
