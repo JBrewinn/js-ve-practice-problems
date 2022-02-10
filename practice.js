@@ -642,15 +642,14 @@ function addUpTo(num) {
 
 // Create a function that takes an array of strings and numbers, and filters out the array so that it returns an array of integers only.
 
-var newArr = [];
+let newArr = [];
 
 function filterArray(arr) {
 	for (let i = 0; i < arr.length; i++) {
-		if (typeof arr[i] == Number) {
+		if (typeof (arr[i]) == typeof 1) {
 			newArr.push(arr[i]);
-			
-		} return newArr;
-	} 
+		} 
+	} return newArr;
 }
 
 console.log(filterArray([1, 2, 3, "a", "b", 4]));
