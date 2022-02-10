@@ -637,6 +637,7 @@ function addUpTo(num) {
 		i++;
 	} return tot;
 }
+
 // console.log(addUpTo(7));
 
 
@@ -652,4 +653,32 @@ function filterArray(arr) {
 	} return newArr;
 }
 
-console.log(filterArray([1, 2, 3, "a", "b", 4]));
+// console.log(filterArray([1, 2, 3, "a", "b", 4]));
+
+
+// Given an array of numbers, create a function which returns the same array but with each element's index in the array added to itself. This means you add 0 to the number at index 0, add 1 to the number at index 1, etc...
+
+function addIndexes(arr) {
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] = (arr[i] += i);
+	} return arr;
+}
+
+// console.log(addIndexes([1, 2, 3, 4, 5]));
+
+
+// Create a function which returns the total of all odd numbers up to and including n. n will be given as an odd number.
+
+var tot = 0;
+
+function addOddToN(num) {
+	for (let i = 1; i <= num; i += 2) {
+		if (num%2 != 0) {
+		tot += i;
+		}
+} return tot;
+}
+
+// console.log(addOddToN(5));
+
+
