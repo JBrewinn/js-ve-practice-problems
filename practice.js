@@ -738,3 +738,18 @@ function uploadCount(dates, month) {
 		}
 	}  return tot;
 }
+
+// console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Oct"));
+
+
+function forbiddenLetter(char, arr) {
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i].includes(char)) {
+			return false;
+		} else return true;
+	}
+}
+
+console.log(forbiddenLetter("r", ["rock", "paper", "scissors"]));
+console.log(forbiddenLetter("a", ["spoon", "fork", "knife"]));
+console.log(forbiddenLetter("m", []));
