@@ -743,6 +743,9 @@ function uploadCount(dates, month) {
 
 
 function forbiddenLetter(char, arr) {
+	if (arr.length == 0) {
+		return true;
+	}
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i].includes(char)) {
 			return false;
@@ -750,6 +753,13 @@ function forbiddenLetter(char, arr) {
 	}
 }
 
-console.log(forbiddenLetter("r", ["rock", "paper", "scissors"]));
-console.log(forbiddenLetter("a", ["spoon", "fork", "knife"]));
-console.log(forbiddenLetter("m", []));
+// console.log(forbiddenLetter("r", ["rock", "paper", "scissors"]));
+// console.log(forbiddenLetter("a", ["spoon", "fork", "knife"]));
+// console.log(forbiddenLetter("m", []));
+
+
+// Create a function that takes a 2D array arr and returns the sum of the minimum value in each row.
+
+function sumMinimums(arr) {
+	
+}
