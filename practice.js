@@ -759,7 +759,22 @@ function forbiddenLetter(char, arr) {
 
 
 // Create a function that takes a 2D array arr and returns the sum of the minimum value in each row.
+ 
+var tot = 0;
 
 function sumMinimums(arr) {
-	
-}
+	let i = 0;
+	while (i < arr.length) {
+		console.log(Math.min(arr[i]));
+		tot += (Math.min(arr[i]));
+		console.log(tot);
+		i++;
+	} return tot; 
+} 
+
+console.log(sumMinimums([
+	[1, 2, 3, 4, 5],
+	[5, 6, 7, 8, 9],
+	[20, 21, 34, 56, 100]
+  ]));
+
