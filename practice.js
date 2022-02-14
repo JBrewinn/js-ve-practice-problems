@@ -765,16 +765,17 @@ var tot = 0;
 function sumMinimums(arr) {
 	let i = 0;
 	while (i < arr.length) {
-		console.log(Math.min(arr[i]));
-		tot += (Math.min(arr[i]));
-		console.log(tot);
+		console.log(Math.min(...arr[i]));
+		tot += (Math.min(...arr[i]));
 		i++;
 	} return tot; 
 } 
 
-console.log(sumMinimums([
-	[1, 2, 3, 4, 5],
-	[5, 6, 7, 8, 9],
-	[20, 21, 34, 56, 100]
-  ]));
+// console.log(sumMinimums([
+// 	[1, 2, 3, 4, 5],
+// 	[5, 6, 7, 8, 9],
+// 	[20, 21, 34, 56, 100]
+//   ]));
 
+
+// Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
