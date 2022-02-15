@@ -791,4 +791,23 @@ function findFactors(num) {
 	} return arr;
 }
 
-console.log(findFactors(20));
+// console.log(findFactors(20));
+
+
+// Given an integer n. Your task is to find how many digits this integer contains without using String or Array methods!
+
+function sumDigits(n) {
+	var num = 0;
+	if (n >= 1) {
+		++num;
+	}
+	while (n / 10 >= 1) {
+		n /= 10;
+		++ num;
+	}
+	return num;
+}
+
+// console.log(sumDigits(9102948));
+
+
