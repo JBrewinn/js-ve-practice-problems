@@ -811,3 +811,12 @@ function sumDigits(n) {
 // console.log(sumDigits(9102948));
 
 
+// Create a function that returns the average of a list composed of letters. First, find the number of the letter in the alphabet in order to find the average of the list.
+
+new Object = [
+	a
+]
+
+function averageIndex(arr) {
+	
+}	
