@@ -643,7 +643,7 @@ function addUpTo(num) {
 
 // Create a function that takes an array of strings and numbers, and filters out the array so that it returns an array of integers only.
 
-let newArr = [];
+var newArr = [];
 
 function filterArray(arr) {
 	for (let i = 0; i < arr.length; i++) {
@@ -742,6 +742,8 @@ function uploadCount(dates, month) {
 // console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Oct"));
 
 
+// Given a letter and an array of words, return whether the letter does not appear in any of the words.
+
 function forbiddenLetter(char, arr) {
 	if (arr.length == 0) {
 		return true;
@@ -778,4 +780,15 @@ function sumMinimums(arr) {
 //   ]));
 
 
-// Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+// Create a function that finds each factor of a given number n. Your solution should return an array of the number(s) that meet this criteria.
+
+function findFactors(num) {
+	let arr = [];
+	for (let i = 1; i <= num; i++) {
+		if (num%i == 0) {
+			arr.push(i);
+		} 
+	} return arr;
+}
+
+console.log(findFactors(20));
